@@ -4,7 +4,7 @@ from ydata_profiling import ProfileReport
 import streamlit as st
 from streamlit_ydata_profiling import st_profile_report
 
-df = pd.read_csv('air_comp_data_new.csv')
+df = pd.read_csv('Entegris_PowerCons.csv')
 pr = ProfileReport(df, minimal=True, orange_mode=True, explorative=True)
 st_profile_report(pr, navbar=True)
 
