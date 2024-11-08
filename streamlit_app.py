@@ -5,6 +5,7 @@ import streamlit as st
 from streamlit_ydata_profiling import st_profile_report
 
 df = pd.read_csv('Entegris_PowerCons.csv')
+df.head()
 pr = ProfileReport(df)
 ProfileReport(pr, navbar=True)
 
