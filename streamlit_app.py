@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_ydata_profiling import st_profile_report
 
 df = pd.read_csv('Entegris_PowerCons.csv')
-pr = st_profile_report(df, title="Profiling Report")
+pr = st_profile_report(df)
 st_profile_report(pr, navbar=True)
 
 st.title("Power Consumption Y Data Profile")
